@@ -13,13 +13,26 @@
   </head>
   <body>
     <nav>
-      <a href="#" class="nav__logo"><img src="images/SLM logo.png" alt="logo"></a>
-      <a href="#about" class="nav__links about__link">About Us</a>
-      <a href="#mission" class="nav__links">Mission and Vision</a>
-      <a href="#gallery" class="nav__links">Gallery</a>
-      <a href="#footer" class="nav__links">Contact Us</a>
-      <a href="#give" class="nav__links">Give</a>
+      <a href="index.html" class="nav__logo"><img src="images/SLM logo.png" alt="logo"></a>
+      <a href="#" onclick="showSidebar()"><i class="ri-menu-fill"></i></a>
+      <a href="#about" class="nav__links nav__links__desktop about__link">About Us</a>
+      <a href="#mission" class="nav__links nav__links__desktop">Mission and Vision</a>
+      <a href="#gallery" class="nav__links nav__links__desktop">Gallery</a>
+      <a href="#footer" class="nav__links nav__links__desktop">Contact Us</a>
+      <a href="#give" class="nav__links nav__links__desktop">Give</a>
+
+      <div class="nav__links__div sidebar">
+        <a href="#" onclick="hideSidebar()"><i class="ri-close-circle-fill"></i></a>
+        <a href="#about" class="nav__links about__link">About Us</a>
+        <a href="#mission" class="nav__links">Mission and Vision</a>
+        <a href="#gallery" class="nav__links">Gallery</a>
+        <a href="#footer" class="nav__links">Contact Us</a>
+        <a href="#give" class="nav__links">Give</a>
+      </div>
     </nav>
+    <div class="whatsapp-btn">
+      <a href="tel:+2348105725896"><i class="ri-whatsapp-fill"></i></a>
+    </div>
     <header>
       <div class="section__container header__container">
         <h2 class="section__title">
@@ -51,7 +64,7 @@
         </p>
 
         <div class="action__btns">
-          <button class="btn"><a href="#footer">Message Us</a></button>
+          <button class="btn action__btn"><a href="#footer">Message Us</a></button>
           <a href="https://www.youtube.com/@Rev.JamesPhoenixOnu" class="video" target="_blank">
             <div class="play">
               <i class="ri-play-fill"></i>
@@ -232,10 +245,21 @@
 
       <div class="footer-credit">
         <h3>
-          Your dreams, our code – Powered by
+          Your dreams, our code – Powered by <br class="showOn400">
           <a href="https://sparkinnovationhub.com/" target="_blank">Spark Innovation Hub</a>
         </h3>
       </div>
     </footer>
+
+    <script>
+      function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex";
+      }
+      function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none";
+      }
+    </script>
   </body>
 </html>
