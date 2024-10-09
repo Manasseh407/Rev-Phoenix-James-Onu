@@ -278,6 +278,24 @@ footer {
   scale: 1.1;
 }
 
+.images-btn {
+  margin: 15px auto;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--secondary-color);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.images-btn:hover {
+  background-color: var(--secondary-color-dark);
+}
+
 .account__container {
   max-width: var(--max-width);
   margin: 0rem auto;
@@ -356,6 +374,17 @@ footer {
 
 .footer__form button {
   width: max-content;
+}
+
+.footer-credit {
+  text-align: center;
+  background-color: #171717;
+}
+
+.footer-credit h3 {
+  color: #f79e3d;
+  padding: 20px;
+  font-size: 12px;
 }
 
 /* Media queries */
