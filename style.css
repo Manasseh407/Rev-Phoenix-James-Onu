@@ -581,11 +581,14 @@ footer {
   }
 }
 
-@media (max-width: 440px){
+@media (max-width: 400px){
   .showOn400{
     display: block;
   }
   
+  .section__container p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 370px) {
